@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tabuada</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container-fluid">
+        	<header class="row">
+        		<div class="jumbotron jumbotron-fluid col-lg-12">
+				  <div class="container">
+				    <h1 class="display-1">Gerador de Tabuadas</h1>
+				  </div>
+				</div>
+        	</header>
+
+        	<section class="row">
+        		<div class="col-lg-12">
+        			<form action="saida.php" method="post" accept-charset="utf-8">
+        				<fieldset>
+        					<legend></legend>
+        					<table>
+        						<tr>
+        							<td><label for="num1">Criar tabuadas apartir do numero</label></td>
+        							<td><input type="number" name="num1" value="1" placeholder=""></td>
+        							<td> até </td>
+        							<td><input type="number" name="num2" value="10" placeholder=""></td>
+        							<td rowspan="2"><center><button type="submit" class="btn btn-success">Gerar Tabuada de Multiplicação</button></center></td>
+        						</tr>
+
+        						<tr>
+        							<td><label for="mult1">Multiplocando os numeros de </label></td>
+        							<td><input type="number" name="mult1" value="1" placeholder=""></td>
+        							<td> até </td>
+        							<td><input type="number" name="mult2" value="10" placeholder=""></td>
+        						</tr>
+        					</table>
+        				</fieldset>
+        			</form>
+        		</div>
+        	</section>
+        </div>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
